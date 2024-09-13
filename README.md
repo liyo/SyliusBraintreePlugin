@@ -46,8 +46,8 @@ We have a 70-person team of experts: business analysts and consultants, eCommerc
 ---
 * [Overview](#overview)
 * [Installation](#installation)
-  * [Customization](#customization)
-  * [Testing](#testing)
+* [Customization](#customization)
+* [Testing](#testing)
 * [Functionalities](#functionalities)
 * [Demo](#demo)
 * [Additional resources for developers](#additional-resources-for-developers)
@@ -62,31 +62,23 @@ We have a 70-person team of experts: business analysts and consultants, eCommerc
 The Braintree Plugin seamlessly integrates the Braintree payment gateway into your Sylius eCommerce platform, enabling a straightforward and secure shopping experience for your customers. As an open-source addition to the Sylius ecosystem, this plugin brings together the comprehensive features of both Sylius and Braintree, facilitating not only payment processing but also order refunds.
 
 
+## Installation
 
-
-# Installation
 ---
+### Requirements
 
-```bash
-$ composer require bitbag/braintree-plugin 
-```
-    
-Add plugin dependencies to your config/bundles.php file:
+We work on stable, supported and up-to-date versions of packages. We recommend you to do the same.
 
-```php
-return [
-   BitBag\SyliusBraintreePlugin\BitBagSyliusBraintreePlugin::class => ['all' => true]
-];
-```
+| Package       | Version         |
+|---------------|-----------------|
+| PHP           | \>=8.0          |
+| sylius/sylius | 1.12.x - 1.13.x |
+| MySQL         | \>= 5.7         |
+| NodeJS        | \>= 18.x        |
+----
 
-Import configuration:
-
-```yaml
-imports:
-    ...
-    
-    - { resource: "@BitBagSyliusBraintreePlugin/Resources/config/config.yml" }
-```
+### Full installation guide
+- [See the full installation guide](doc/installation.md)
 
 ## Customization
 ----
