@@ -63,18 +63,18 @@ The Braintree Plugin seamlessly integrates the Braintree payment gateway into yo
 
 
 ## Installation
+----
 
----
 ### Requirements
 
 We work on stable, supported and up-to-date versions of packages. We recommend you to do the same.
 
-| Package       | Version         |
-|---------------|-----------------|
-| PHP           | \>=8.0          |
-| sylius/sylius | 1.12.x - 1.13.x |
-| MySQL         | \>= 5.7         |
-| NodeJS        | \>= 18.x        |
+| Package       | Version                   |
+| ------------- | ------------------------- |
+| PHP           | ^8.0 or ^8.1              |
+| sylius/sylius | ^1.12.0 or ^1.13.0        |
+| MySQL         | \>= 5.7                   |
+| NodeJS        | \>= 18.x                  |
 ----
 
 ### Full installation guide
@@ -96,7 +96,7 @@ $ bin/console debug:container bitbag_sylius_braintree_plugin
 $ composer install
 $ cd tests/Application
 $ yarn install
-$ yarn build
+$ yarn encore dev
 $ bin/console assets:install public -e test
 $ bin/console doctrine:database:create -e test
 $ bin/console doctrine:schema:create -e test
